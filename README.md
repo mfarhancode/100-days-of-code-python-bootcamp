@@ -1,95 +1,91 @@
 # 100 Days of Code – Python Bootcamp
 
-This repository contains my daily code and projects from **"100 Days of Code: The Complete Python Pro Bootcamp" by Dr. Angela Yu**.
-
-The goal of this challenge is simple: **code consistently, build real projects, and become confident using Python in practical scenarios**.
+This repository contains my daily code and projects from **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by **Dr. Angela Yu**.
 
 ---
 
 ## 📘 About the Course
 
-* 100 days of coding, approximately 1 hour per day
+* 100 days of coding
 * Learn Python by building **1 project each day**
 * Designed for beginners, but progresses to professional‑level topics
 * Focus on hands‑on learning instead of theory only
 
-Topics covered throughout the course include:
-
-* Python fundamentals and Object‑Oriented Programming
-* Automation and scripting
-* Game development
-* Web scraping (BeautifulSoup, Selenium)
-* Web development with Flask
-* APIs and databases (SQL, SQLite, PostgreSQL)
-* Data science basics (Pandas, NumPy, Matplotlib)
-* GUI development with Tkinter
+**Instructor:** Dr. Angela Yu
+**Course Link:** [https://www.udemy.com/course/100-days-of-code/](https://www.udemy.com/course/100-days-of-code/)
 
 ---
 
-## 🗂 Repository Structure
+## 🗓 Course Progress
 
-Each day has its own folder containing the code and a short explanation.
+### 👨🏻‍🎓 Beginner
 
-```
-100-days-of-code-python-bootcamp/
-│
-├── Day01/
-│   ├── main.py
-│   └── README.md
-│
-├── Day02/
-│   ├── main.py
-│   └── README.md
-│
-├── Day03/
-│   ├── main.py
-│   └── README.md
-│
-├── ...
-│
-└── README.md
-```
+* **Day 01:** [Working with Variables in Python to Manage Data](./Day01)
+* **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day02)
+* **Day 03:** [Control Flow and Logical Operators](./Day03)
+* **Day 04:** [Randomisation and Python Lists](./Day04)
+* **Day 05:** Python Loops
+* **Day 06:** Python Functions & Karel
+* **Day 07:** Hangman
+* **Day 08:** Function Parameters & Caesar Cipher
+* **Day 09:** Dictionaries, Nesting and the Secret Auction
+* **Day 10:** Function Return Values and the Calculator Project
+* **Day 11:** Blackjack Capstone Project
+* **Day 12:** Scope and Namespacing in Python
+* **Day 13:** Debugging: How to Find and Fix Errors in your Code
+* **Day 14:** Higher Lower Game Project
+
+### 🏋🏻‍♂️ Intermediate
+
+* **Day 15:** Local Development Environment Setup & the Coffee Machine Project
+* **Day 16:** Object Oriented Programming (OOP)
+* **Day 17:** The Quiz Project & the Benefits of OOP
+* **Day 18:** Turtle Graphics and GUIs
+* **Day 19:** Instances, State and Higher Order Functions
+* ...
+
+### 💪 Intermediate+
+
+* **Day 32:** Send Email (smtplib) & Manage Dates (datetime): The Automated Birthday Wisher
+* ...
+
+### 🚀 Advanced
+
+* **Day 59:** Upgraded Blog with Bootstrap
+* ...
+
+### 👨‍💻 Professional
+
+* **Day 81:** Portfolio Project – Text to Morse Code Converter
+* **Day 82:** Portfolio Project – A Website to Show Off My Skills
+* **Day 83:** Portfolio Project – Text‑Based Tic Tac Toe Game
+* **Day 84:** Portfolio Project – Image Watermarking Program
+* **Day 85:** Portfolio Project – Typing Speed Test (Tkinter GUI)
+* ...
 
 ---
 
-## 🗓 Progress
+## 🛠 Tools & Technologies Covered
 
-| Day | Project             | Concepts                |
-| --- | ------------------- | ----------------------- |
-| 01  | Band Name Generator | Variables, Input, Print |
-| 02  | Tip Calculator      | Data Types, Math        |
-| 03  | Treasure Island     | Conditionals            |
-| 04  | Rock Paper Scissors | Random, Lists           |
-| ... | ...                 | ...                     |
-
-(This table will be updated as I progress.)
-
----
-
-## 🛠 Tools Used
+Throughout this course, I work with a wide range of tools and technologies, including:
 
 * Python 3
-* PyCharm / VS Code
-* Git & GitHub
+* PyCharm, Jupyter Notebook, Google Colab
+* Python scripting and automation
+* Python game development
+* Web scraping (BeautifulSoup, Selenium)
+* Requests, WTForms
+* Data science tools: Pandas, NumPy, Matplotlib, Plotly, Scikit‑Learn, Seaborn
+* Turtle graphics
+* Python GUI development (Tkinter)
+* Front‑end web development: HTML5, CSS3, Bootstrap 4
+* Bash command line
+* Git, GitHub, and version control
+* Backend web development with Flask
+* REST APIs
+* Databases: SQL, SQLite, PostgreSQL
+* Authentication
+* Web design
+* Deployment with GitHub Pages, Heroku, and Gunicorn
 
 ---
-
-## 🎯 Purpose of This Repository
-
-* Track my daily learning progress
-* Practice writing clean and readable Python code
-* Build a public portfolio of small projects
-* Stay consistent and accountable
-
----
-
-## 📌 Note
-
-This repository is part of a personal learning journey. Some code may be simple or repetitive early on, but it reflects gradual improvement over time.
-
----
-
-## 🔗 Course Reference
-
-**100 Days of Code: The Complete Python Pro Bootcamp**
-Instructor: Dr. Angela Yu
