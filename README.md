@@ -20,10 +20,10 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 
 ### 👨🏻‍🎓 Beginner
 
-* **Day 01:** [Working with Variables in Python to Manage Data](./Day01)
-* **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day02)
-* **Day 03:** [Control Flow and Logical Operators](./Day03)
-* **Day 04:** [Randomisation and Python Lists](./Day04)
+* **Day 01:** [Working with Variables in Python to Manage Data](./Day-01)
+* **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day-02)
+* **Day 03:** [Control Flow and Logical Operators](./Day-03)
+* **Day 04:** [Randomisation and Python Lists](./Day-04)
 * **Day 05:** Python Loops
 * **Day 06:** Python Functions & Karel
 * **Day 07:** Hangman
