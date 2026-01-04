@@ -20,8 +20,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 
 ### 👨🏻‍🎓 Beginner
 
-* **Day 01:** [Working with Variables in Python to Manage Data](./Day-01)
-* **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day-02)
+* **Day 01:** [Working with Variables in Python to Manage Data](./Day_01_Band_Name_Generator)
+* **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day_01_Tip_Calculator)
 * **Day 03:** [Control Flow and Logical Operators](./Day-03)
 * **Day 04:** [Randomisation and Python Lists](./Day-04)
 * **Day 05:** Python Loops
