@@ -19,25 +19,25 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 ## 🗓 Course Progress
 
 ### 👨🏻‍🎓 Beginner
+### 👨🏻‍🎓 Beginner
 
 * **Day 01:** [Working with Variables in Python to Manage Data](./Day_01_Band_Name_Generator)
 * **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day_02_Tip_Calculator)
-* **Day 03:** [Control Flow and Logical Operators](./Day-03)
-* **Day 04:** [Randomisation and Python Lists](./Day-04)
-* **Day 05:** Python Loops
-* **Day 06:** Python Functions & Karel
-* **Day 07:** Hangman
-* **Day 08:** Function Parameters & Caesar Cipher
-* **Day 09:** Dictionaries, Nesting and the Secret Auction
-* **Day 10:** Function Return Values and the Calculator Project
-* **Day 11:** Blackjack Capstone Project
-* **Day 12:** Scope and Namespacing in Python
-* **Day 13:** Debugging: How to Find and Fix Errors in your Code
-* **Day 14:** Higher Lower Game Project
+* **Day 03:** [Control Flow and Logical Operators](./Day_03_Treasure_Island)
+* **Day 04:** [Randomisation and Python Lists](./Day_04_Rock_Paper_Scissors)
+* **Day 05:** [Python Loops](./Day_05_Password_Generator)
+* **Day 07:** [Hangman](./Day_07_Hangman)
+* **Day 08:** [Function Parameters & Caesar Cipher](./Day_08_Caesar_Cipher)
+* **Day 09:** [Dictionaries, Nesting and the Secret Auction](./Day_09_Blind_Auction_Program)
+* **Day 10:** [Function Return Values and the Calculator Project](./Day_10_Calculator_Project)
+* **Day 11:** [Blackjack Capstone Project](./Day_11_The_Blackjack_Capstone_Project)
+* **Day 12:** [Scope and Namespacing in Python](./Day_12_The_Number_Guessing_Game)
+* **Day 13:** [Debugging: How to Find and Fix Errors in your Code](./Day_13_Debugger)
+* **Day 14:** [Higher Lower Game Project](./Day_14_Higher_Lower_Game_Project)
 
 ### 🏋🏻‍♂️ Intermediate
 
-* **Day 15:** Local Development Environment Setup & the Coffee Machine Project
+* **Day 15:** [Local Development Environment Setup & the Coffee Machine Project](./Day_15_Coffee_Machine_Project)
 * **Day 16:** Object Oriented Programming (OOP)
 * **Day 17:** The Quiz Project & the Benefits of OOP
 * **Day 18:** Turtle Graphics and GUIs
