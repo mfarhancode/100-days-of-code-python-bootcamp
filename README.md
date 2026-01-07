@@ -38,7 +38,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 ### 🏋🏻‍♂️ Intermediate
 
 * **Day 15:** [Local Development Environment Setup & the Coffee Machine Project](./Day_15_Coffee_Machine_Project)
-* **Day 16:** Object Oriented Programming (OOP)
+* **Day 16:** [Object Oriented Programming (OOP)](./Day_16_Coffee_Machine_OOP)
 * **Day 17:** The Quiz Project & the Benefits of OOP
 * **Day 18:** Turtle Graphics and GUIs
 * **Day 19:** Instances, State and Higher Order Functions
