@@ -41,8 +41,6 @@ while game_is_on:
     # Detect collision with wall but not ending the game, move the snake's head to another side of screen
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         snake.change_head_position()
-    # game_is_on = False
-    #     score.game_over()
 
 
     # Detect collision with tail
