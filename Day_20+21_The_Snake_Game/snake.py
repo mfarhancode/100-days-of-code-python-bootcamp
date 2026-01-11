@@ -33,6 +33,17 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
 
+    def change_head_position(self):
+        
+        x, y = self.head.xcor(), self.head.ycor()
+
+        if self.head.heading() == RIGHT or self.head.heading() == LEFT:
+            self.head.goto(-x, y)
+        else:
+            self.head.goto(x, -y)
+        
+
+
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)

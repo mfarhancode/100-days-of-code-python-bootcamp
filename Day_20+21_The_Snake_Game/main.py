@@ -34,9 +34,20 @@ while game_is_on:
         snake.extend()
 
     # Detect collision with wall.
+    # if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    #     game_is_on = False
+    #     score.game_over()
+
+    # Detect collision with wall but not ending the game, move the snake's head to another side of screen
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        game_is_on = False
-        score.game_over()
+        snake.change_head_position()
+    # game_is_on = False
+    #     score.game_over()
+
+    # if snake.head.xcor() > 280:
+        # snake.change_head_position()
+        # x, y = snake.head.xcor(), snake.head.ycor()
+        # snake.head.goto(-x, y)
 
     # Detect collision with tail
     for segment in snake.segments[1:]:
