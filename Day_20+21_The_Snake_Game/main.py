@@ -44,10 +44,6 @@ while game_is_on:
     # game_is_on = False
     #     score.game_over()
 
-    # if snake.head.xcor() > 280:
-        # snake.change_head_position()
-        # x, y = snake.head.xcor(), snake.head.ycor()
-        # snake.head.goto(-x, y)
 
     # Detect collision with tail
     for segment in snake.segments[1:]:
