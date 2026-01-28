@@ -4,7 +4,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 
 ---
 
-## 📘 About the Course
+## About the Course
 
 * 100 days of coding
 * Learn Python by building **1 project each day**
@@ -16,10 +16,9 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 
 ---
 
-## 🗓 Course Progress
+## Course Progress
 
-### 👨🏻‍🎓 Beginner
-### 👨🏻‍🎓 Beginner
+### Beginner
 
 * **Day 01:** [Working with Variables in Python to Manage Data](./Day_01_Band_Name_Generator)
 * **Day 02:** [Understanding Data Types and How to Manipulate Strings](./Day_02_Tip_Calculator)
@@ -35,37 +34,36 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 13:** [Debugging: How to Find and Fix Errors in your Code](./Day_13_Debugger)
 * **Day 14:** [Higher Lower Game Project](./Day_14_Higher_Lower_Game_Project)
 
-### 🏋🏻‍♂️ Intermediate
+### Intermediate
 
 * **Day 15:** [Local Development Environment Setup & the Coffee Machine Project](./Day_15_Coffee_Machine_Project)
 * **Day 16:** [Object Oriented Programming (OOP)](./Day_16_Coffee_Machine_OOP)
 * **Day 17:** [The Quiz Project & the Benefits of OOP](./Day_17_The_Quiz_Project)
-* **Day 18:** Turtle Graphics and GUIs
-* **Day 19:** Instances, State and Higher Order Functions
+* **Day 18:** [Turtle Graphics and GUIs & The Hirst Painting](./Day_18_The_Hirst_Painting)
+* **Day 19:** [Instances, State and Higher Order Functions - Turtle Race](./Day_19_Turtle_Race)
+* **Day 20 + 21:** [Build the Snake Game](./Day_20+21_The_Snake_Game)
+* **Day 22:** [Build Pong: The Famous Arcade Game](./Day_22_Pong_Game)
 * ...
 
-### 💪 Intermediate+
+### Intermediate+
 
-* **Day 32:** Send Email (smtplib) & Manage Dates (datetime): The Automated Birthday Wisher
+* **Day 32:** ---
 * ...
 
-### 🚀 Advanced
+### Advanced
 
-* **Day 59:** Upgraded Blog with Bootstrap
+* **Day 59:** ---
 * ...
 
-### 👨‍💻 Professional
+### Professional
 
-* **Day 81:** Portfolio Project – Text to Morse Code Converter
-* **Day 82:** Portfolio Project – A Website to Show Off My Skills
-* **Day 83:** Portfolio Project – Text‑Based Tic Tac Toe Game
-* **Day 84:** Portfolio Project – Image Watermarking Program
-* **Day 85:** Portfolio Project – Typing Speed Test (Tkinter GUI)
+* **Day 81:** ----
+
 * ...
 
 ---
 
-## 🛠 Tools & Technologies Covered
+## Tools & Technologies Covered
 
 Throughout this course, I work with a wide range of tools and technologies, including:
 
