@@ -30,16 +30,3 @@ class CarManager:
 
 
 
-
-    # def __init__(self):
-    #     super().__init__()
-    #     self.shape('square')
-    #     self.penup()
-    #     self.color(random.choice(COLORS))
-    #     self.shapesize(stretch_wid=1, stretch_len=2)
-    #     self.goto(x=310, y=random.choice(y_pos))
-    #     self.left(180)
-    #
-    # def move(self):
-    #     self.forward(MOVE_INCREMENT)
-
