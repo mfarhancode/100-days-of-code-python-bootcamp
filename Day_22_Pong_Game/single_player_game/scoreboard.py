@@ -9,26 +9,22 @@ class Scoreboard(Turtle):
         self.color('white')
         self.penup()
         self.hideturtle()
-        self.l_score = 0
-        self.r_score = 0
+        self.score = 0
         self.update_scoreboard()
 
     def update_scoreboard(self):
-        self.goto(-100, 260)
-        self.write(self.l_score, align='left', font=FONT)
-        self.goto(100, 260)
-        self.write(self.r_score, align='right', font=FONT)
+        self.goto(0, 260)
+        self.write(self.score, align='center', font=FONT)
 
-    def l_point(self):
-        self.l_score += 1
+    def point(self):
+        self.score += 1
         self.clear()
         self.update_scoreboard()
 
-    def r_point(self):
-        self.r_score += 1
-        self.clear()
-        self.update_scoreboard()
-
-
-    def position(self,position):
+    def position(self):
         self.goto(0,250)
+
+    def game_over(self):
+        self.clear()
+        self.write(f'Game Over! Score: {self.score}', align='center', font=FONT)
+
