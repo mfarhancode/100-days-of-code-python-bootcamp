@@ -3,15 +3,32 @@ from turtle import Screen
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
+from pathlib import Path
+
 
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
 screen.listen()
 
+
+# pth = Path.cwd() / 'car_images'
+# print(pth)
+
+pth = Path(__file__).parent / 'car_images'
+# print(pth)
+image_paths = list(pth.glob('*.gif'))
+# print(images)
+
+images = []
+for img in image_paths:
+    screen.addshape(str(img))
+    images.append(str(img))
+
 p = Player()
-car_manager = CarManager()
+car_manager = CarManager(images=images)
 scoreboard = Scoreboard()
+
 
 screen.onkeypress(p.move, key='Up')
 game_is_on = True
