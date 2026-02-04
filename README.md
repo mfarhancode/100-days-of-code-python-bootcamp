@@ -44,7 +44,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 20 + 21:** [Build the Snake Game](./Day_20+21_The_Snake_Game)
 * **Day 22:** [Build Pong: The Famous Arcade Game](./Day_22_Pong_Game)
 * **Day 23:** [The Turtle Crossing Capstone Project](./Day_23_The_Turtle_Crossing_Capstone_Project)
-* ...
+* **Day 24:** [Files Directories Paths](./Day_24_Files_Directories_Paths)
+* 
 
 ### Intermediate+
 
