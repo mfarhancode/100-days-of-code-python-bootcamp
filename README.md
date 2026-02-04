@@ -45,7 +45,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 22:** [Build Pong: The Famous Arcade Game](./Day_22_Pong_Game)
 * **Day 23:** [The Turtle Crossing Capstone Project](./Day_23_The_Turtle_Crossing_Capstone_Project)
 * **Day 24:** [Files Directories Paths](./Day_24_Files_Directories_Paths)
-* **Day 25:** [Pandas](./Day_25)
+* **Day 25:** [Working with CSV Data and the Pandas Library](./Day_25_Working_with_CSV_Data_and_the_Pandas_Library)
 * ...
 
 ### Intermediate+
