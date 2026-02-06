@@ -2,7 +2,8 @@ from tkinter import *
 
 window = Tk()
 window.title('My First GUI Program')
-window.minsize(width=500, height=300)
+# print(window.minsize())
+window.minsize(width=100, height=300)
 window.config(padx=100, pady=20)
 
 # Label
