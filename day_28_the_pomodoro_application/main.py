@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter.messagebox as messagebox
 import math
 from pathlib import Path
 
@@ -64,7 +65,7 @@ def count_down(count):
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
         global timer
-        timer = window.after(1, count_down, count-1)
+        timer = window.after(1000, count_down, count-1)
     else:
         global sessions, marks
         if sessions % 2 == 0:
@@ -74,6 +75,7 @@ def count_down(count):
         else:
             marks += '✔' # for break
         check_marks.config(text=marks)
+        messagebox.showinfo("Pomodoro | Notification",  "Session is done!\nClick Ok to move to next session.")
         start_timer()
 
 
