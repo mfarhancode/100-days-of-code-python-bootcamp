@@ -48,7 +48,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 24:** [Files Directories Paths](./day_24_files_directories_paths)
 * **Day 25:** [Working with CSV Data and the Pandas Library](./day_25_working_with_csv_data_and_the_pandas_library)
 * **Day 26:** [List Comprehension and the NATO Alphabet](./day_26_nato_phonetic_alphabet)
-* **Day 26:** [Tkinter, *args, **kwargs and Creating GUI Programs](./day_27_tkinter)
+* **Day 27:** [Tkinter, *args, **kwargs and Creating GUI Programs](./day_27_tkinter)
+* **Day 28:** [Tkinter, Dynamic Typing and the Pomodoro GUI Application](./day_28_the_pomodoro_application)
 * ...
 
 ### Intermediate+
