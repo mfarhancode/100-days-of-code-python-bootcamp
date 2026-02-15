@@ -25,7 +25,7 @@ def generate_password():
 
     shuffle(password_list)
     password = "".join(password_list)
-
+    
     password_entry.delete(0, END)
     password_entry.insert(0, password)
     pyperclip.copy(password)
@@ -35,24 +35,24 @@ def generate_password():
 
 def check_data(website, email, get_password=False):
     file_path = Path(__file__).parent.joinpath('data.txt')
-    if not file_path.exists():
+    try:
+        with open(file_path, 'r') as data:
+            for line in data:
+                parts = line.split('|')
+                if len(parts) == 3:
+                    web = parts[0].strip().lower()
+                    eml = parts[1].strip().lower()
+                    pswrd = parts[2].strip()
+                    if web == website and eml == email:
+                        return (True, pswrd) if get_password else True
+    except FileNotFoundError:
         return False
-    with open(file_path, 'r') as data:
-        for line in data:
-            parts_of_line = line.split('|')
-            if len(parts_of_line) == 3:
-                web = parts_of_line[0].strip()
-                eml = parts_of_line[1].strip()
-                pswrd = parts_of_line[2].strip()
-                if web == website and eml == email:
-                    return (True, pswrd) if get_password else True
     return False
-
-
 
 def overwrite_data(website, email, password):
     file_path = Path(__file__).parent.joinpath('data.txt')
-    update_pass = messagebox.askokcancel(title=website, message=f'You have already added this website with this email/username.\nDo you want to update the password?')
+    update_pass = messagebox.askokcancel(title=website.title(), 
+                                       message=f"You have already saved {website} with this email.\nDo you want to update the password?")
     if update_pass:
         with open(file_path, 'r') as data:
             lines = data.readlines()
@@ -60,9 +60,7 @@ def overwrite_data(website, email, password):
             for line in lines:
                 parts = line.split('|')
                 # Strict matching to ensure we only update the exact entry
-                w = parts[0].strip().lower() #website
-                e  = parts[1].strip().lower() #email
-                if len(parts) == 3 and w == website and e == email:
+                if len(parts) == 3 and parts[0].strip().lower() == website and parts[1].strip().lower() == email:
                     data.write(f'{website} | {email} | {password}\n')
                 else:
                     data.write(line)
@@ -78,26 +76,25 @@ def add_data():
     if len(website) == 0 or len(email) == 0 or len(password) == 0:
         messagebox.showinfo(title='Error', message='Please do not leave any fields empty')
     else:
-        # check if email and website already exists
         if check_data(website, email):
             overwrite_data(website, email, password)
             return
 
-        # add new data
         file_path = Path(__file__).parent.joinpath('data.txt')
-        is_ok = messagebox.askokcancel(title=website, message=f'Details entered: \nEmail: {email} \nPassword: {password} \nSave this?')
+        is_ok = messagebox.askokcancel(title=website.title(), 
+                                     message=f'Details entered: \nEmail: {email} \nPassword: {password} \nSave this?')
         if is_ok:
             with open(file_path, 'a') as data:
-                data_to_add = f'{website} | {email} | {password}\n'
-                data.write(data_to_add)
+                data.write(f'{website} | {email} | {password}\n')
+                messagebox.showinfo('Success', 'Data updated successfully')
                 website_entry.delete(0, END)
                 password_entry.delete(0, END)
-                messagebox.showinfo('Success', 'Data saved succesfully')
 
 def find_password():
     website = website_entry.get().lower()
     email = email_entry.get().lower()
-    if len(website) == 0 or len(email) == 0:
+    
+    if not website or not email:
         messagebox.showinfo(title='Error', message='Enter both Website and Email to search')
         return
     
@@ -105,22 +102,20 @@ def find_password():
     if isinstance(result, tuple):
         pswrd = result[1]
         pyperclip.copy(pswrd)
-        messagebox.showinfo(website.title(), f'Email: {email}\nPassword: {pswrd}\n\n(Password copied to clipboard)')
-        # print(check_data(website, email))
+        messagebox.showinfo(website.title(), f'Email: {email}\nPassword: {pswrd}\n\n(Copied to clipboard)')
     else:
-        messagebox.showinfo('Password Manager', 'No data found')
-
+        messagebox.showinfo('Not Found', f'No existing entry for {website} with that email.')
 
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
-window.title('MyPass | Password Manager')
-window.config(padx=60, pady=50, bg=BG_COLOR)
+window.title('MyPass | Secure Vault')
+window.config(padx=60, pady=60, bg=BG_COLOR)
 
 canvas = Canvas(width=200, height=200, bg=BG_COLOR, highlightthickness=0)
 logo_path = Path(__file__).parent.joinpath('logo.png')
 logo = PhotoImage(file=logo_path)
-canvas.create_image((100,100),image=logo)
+canvas.create_image((100, 100), image=logo)
 canvas.grid(row=0, column=1, pady=(0, 20))
 
 # Labels
