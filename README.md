@@ -50,6 +50,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 26:** [List Comprehension and the NATO Alphabet](./day_26_nato_phonetic_alphabet)
 * **Day 27:** [Tkinter, *args, **kwargs and Creating GUI Programs](./day_27_tkinter)
 * **Day 28:** [Tkinter, Dynamic Typing and the Pomodoro GUI Application](./day_28_the_pomodoro_application)
+* **Day 29:** [Building a Password Manager GUI App with Tkinter](./day_29_password_manager_app)
 * ...
 
 ### Intermediate+
