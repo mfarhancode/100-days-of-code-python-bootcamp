@@ -28,15 +28,19 @@ def generate_password():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
-def check_data(website, email):
+def check_data(website, email, get_password=False):
     file_path = Path(__file__).parent.joinpath('data.txt')
         # check if email and website already exists
     with open(file_path, 'r') as data:
         for line in data:
             # print(line.strip('\n'))
-            web = line.split('|')[0].strip()
-            eml = line.split('|')[1].strip()
+            parts_of_line = line.split('|')
+            web = parts_of_line[0].strip()
+            eml = parts_of_line[1].strip()
+            pswrd = parts_of_line[2].strip()
             if web == website and eml == email:
+                if get_password:
+                    return True, pswrd # if password was also asked to be returned
                 return True
     return False
 
@@ -60,8 +64,6 @@ def overwrite_data(website, email, password):
     else:
         return # return without overwriting
 
-
-
 def add_data():
     website = website_entry.get().lower()
     email = email_entry.get().lower()
@@ -80,31 +82,6 @@ def add_data():
             overwrite_data(website, email, password)
             return
 
-
-
-        # with open(file_path, 'r') as data:
-        #     for line in data:
-        #         # print(line.strip('\n'))
-        #         web = line.split('|')[0].strip()
-        #         eml = line.split('|')[1].strip()
-        #         if web == website and eml == email:
-        #             update_pass = messagebox.askokcancel(title=website, message=f'You have already added this website before with same email/username. Do you want to overwrite/update the password?')
-        #             if update_pass:
-        #                 with open(file_path, 'r') as data:
-        #                     lines = data.readlines()
-        #                 with open(file_path, 'w') as data:
-        #                     for line in lines:
-        #                         if web in line and eml in line:
-        #                             data.write(f'{website} | {email} | {password}\n')
-        #                         else:
-        #                             data.write(line)
-        #                 website_entry.delete(0, END)
-        #                 password_entry.delete(0, END)
-        #                 messagebox.showinfo('Password Manager', 'Data saved succesfully')
-        #                 return #return after updating
-        #             else:
-        #                 return # return without overwriting
-
         # add new data
         is_ok = messagebox.askokcancel(title=website, message=f'These are the details entered: \nEmail: {email} \nPassword: {password} \nIs it ok to save?')
         if is_ok:
@@ -115,7 +92,24 @@ def add_data():
                 password_entry.delete(0, END)
                 messagebox.showinfo('Password Manager', 'Data saved succesfully')
 
-# print(f)
+def find_password():
+    website = website_entry.get().lower()
+    email = email_entry.get().lower()
+    if len(website) == 0:
+        messagebox.showinfo(title='Error', message='Please enter website')
+    elif len(email) == 0:
+        messagebox.showinfo(title='Error', message='Please enter email')
+    else:
+        returned_value = check_data(website, email, get_password=True)
+        if returned_value:
+            pswrd = returned_value[1]
+            pyperclip.copy(pswrd)
+            messagebox.showinfo('Password Manager', f'{pswrd}\n(Password copied to clipboard)')
+            # print(check_data(website, email))
+        else:
+            messagebox.showinfo('Password Manager', 'No data found')
+
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
@@ -139,7 +133,13 @@ email_label = Label(text='Email/Username:', font=("Arial", 10))
 email_label.grid(row=2, column=0)
 
 password_label = Label(text='Password:', font=("Arial", 10))
-password_label.grid(row=3, column=0)
+password_label.grid(row=5, column=0)
+
+find_pass_label = Label(text='Find a password:', font=("Arial", 10))
+find_pass_label.grid(row=3, column=0)
+
+info_label = Label(text='Or add a password:', font=("Arial", 10))
+info_label.grid(row=4, column=1)
 
 # Entries
 
@@ -151,15 +151,18 @@ email_entry = Entry(width=52)
 email_entry.insert(0, 'name@gmail.com')
 email_entry.grid(row=2, column=1, columnspan=2)
 
+find_pass_btn = Button(text='Find Password', command=find_password)
+find_pass_btn.grid(row=3, column=1)
+
 password_entry = Entry(width=33)
-password_entry.grid(row=3, column=1)
+password_entry.grid(row=5, column=1)
 
 # Buttons
 
 generate_pass_btn = Button(text='Generate Password', command=generate_password)
-generate_pass_btn.grid(row=3, column=2)
+generate_pass_btn.grid(row=5, column=2)
 
 add_btn = Button(text='Add', width=44, command=add_data)
-add_btn.grid(row=4, column=1, columnspan=2)
+add_btn.grid(row=6, column=1, columnspan=2)
 
 window.mainloop()
