@@ -2,9 +2,11 @@ Indonesian,English
 lusin,dozen
 sebelas,eleven
 belas,twelve
+sembilan,nine
 delapan,eight
 tujuh,seven
 jumlah,amount
+lima,five
 enam,six
 kurang,not enough
 nomor,number
@@ -16,7 +18,10 @@ dua,two
 satu,One
 tiga,three
 lain,other
+sedih,sad
 bahagia,happy
+mirip,similar
+penuh,full
 biasa,normal
 pintar,clever
 mudah,easy
@@ -24,8 +29,10 @@ bodoh,stupid
 rusak,damaged
 sulit,difficult
 sempurna,perfect
+kotor,dirty
 bersih,clean
 dekat,near
+jelas,clear
 jauh,Far
 miskin,poor
 panjang,long
@@ -35,38 +42,55 @@ jelek,Bad
 pendek,short
 tinggi,tall
 cantik,Beautiful
+banyak,Lots
 sedikit,A little
 hangat,warm
+baru,new
 kecil,small
 betul,right
 dingin,cold
+menurut,according to
 menolak,reject
 menutup,close
+menunggu,wait
+menarik,interesting
+menerima,accept
 memesan,order
 memanggil,call
 memilih,choose
 mencari,look for
 mendapat,get
+mendorong,push
 mencoba,try
+menjadi,become
 menjual,sell
 mendengar,hear
 menjaga,guard
 membangun,build
+membuka,open
 memberi,give
 membuat,make
 membantu,help
 membayar,pay
 meminum,drinking
+meminta,request
 memakan,eat
+melihat,see
 memulai,start
 melempar,throw
 oranye,orange
 abu-abu,gray
-ungu,purple
+merah muda,pink
 warna,color
+kuning,yellow
 biru,blue
+hijau,green
+pertanyaan,question
+mengapa,Why
+benar,Correct
 salah,Wrong
 kapan,When
+kenapa,Why
 apa,What
 di mana,Where
 bagaimana,How
@@ -77,9 +101,12 @@ berharap,hope
 bersama,together
 bergerak,move
 belajar,Study
+berkumpul,gather
 berlaku,valid
+berkunjung,visit
 bekerja,Work
 berkembang,develop
 berbicara,speak
+bersaing,compete
 bertemu,meet
 berubah,changed
