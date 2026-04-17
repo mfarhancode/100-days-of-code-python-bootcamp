@@ -53,7 +53,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 29:** [Building a Password Manager GUI App with Tkinter](./day_29_password_manager_app)
 * **Day 29:** [Building a Password Manager GUI App with Tkinter](./day_29_password_manager_app)
 * **Day 30:** [Errors, Exceptions and JSON Data](./day_30_errors_and_exceptions_handling)
-* **Day 30:** [Flash Card App Capstone Project](./day_31_flash_card_project_start)
+* **Day 31:** [Flash Card App Capstone Project](./day_31_flash_card_project_start)
 
 * ...
 

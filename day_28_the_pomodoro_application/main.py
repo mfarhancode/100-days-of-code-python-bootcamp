@@ -19,6 +19,7 @@ marks = ''
 # ---------------------------- TIMER RESET ------------------------------- # 
 
 def reset_timer():
+    start_btn['state'] = "normal"
     window.after_cancel(timer)
     label.config(text='Timer', fg=GREEN)
 
@@ -32,6 +33,8 @@ def reset_timer():
 
 def start_timer():
     global sessions
+
+    start_btn['state'] = "disabled"
 
     sessions += 1
     check_marks.config(text=marks)
