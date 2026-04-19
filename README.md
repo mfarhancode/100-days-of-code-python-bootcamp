@@ -56,7 +56,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 31:** [Flash Card App Capstone Project](./day_31_flash_card_project_start)
 * **Day 32:** [Send Email (smtplib)](./day_32_send_email_smtplib)
 * **Day 33:** [API Endpoints & API Parameters - ISS Overhead Notifier](./day_33_iss_overhead_notifier)
-
+* **Day 34:** [Creating a GUI Quiz App](./day_34_creating_a_gui_quiz_app)
 
 * ...
 
