@@ -73,7 +73,7 @@ def main():
                                 msg="Subject:Look Up\n\nISS is over you!!!")
         print("Email notification sent!")
 
-# while True:
-#     main()
-#     time.sleep(60)
 
+while True:
+    main()
+    time.sleep(60)
