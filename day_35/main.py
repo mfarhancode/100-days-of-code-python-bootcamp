@@ -11,6 +11,7 @@ WEATHERMAP_API_KEY=os.getenv("WEATHERMAP_API_KEY")
 ACCOUNT_SID=os.getenv("ACCOUNT_SID")
 AUTH_TOKEN=os.getenv("AUTH_TOKEN")
 PHONE_NUMBER=os.getenv("PHONE_NUMBER")
+TWILLIO_WA_NUMBER=os.getenv("TWILLIO_WA_NUMBER")
 
 parameters = {
     "lat": 44.583288,
@@ -38,7 +39,7 @@ if will_rain:
     # print("It's going to rain today. Remember to bring an ☔")
     client = Client(ACCOUNT_SID, AUTH_TOKEN)
     message = client.messages.create(
-        from_="whatsapp:+14155238886",
+        from_=f"whatsapp:{TWILLIO_WA_NUMBER}",
         body="It's going to rain today. Remember to bring an umbrella",
         to=f"whatsapp:{PHONE_NUMBER}"
     )
