@@ -58,7 +58,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 33:** [API Endpoints & API Parameters - ISS Overhead Notifier](./day_33_iss_overhead_notifier)
 * **Day 34:** [Creating a GUI Quiz App](./day_34_creating_a_gui_quiz_app)
 * **Day 35:** [API Keys Authentication, Twillio: Send SMS](./day_35_send_sms_twillio)
-
+* **Day 36:** [Stock Trading News Alert Project](./day_36_stock_trading_news_alert_project)
 * ...
 
 ### Intermediate+
