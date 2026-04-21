@@ -28,12 +28,12 @@ response = requests.get(url=STOCK_ENDPOINT, params=stock_params)
 response.raise_for_status()
 data = response.json()
 
-print(data)
+# print(data)
 
 close_data = []
 for key in data['Time Series (Daily)']:
     temp = data['Time Series (Daily)'][key]["4. close"]
-    print(temp)
+    # print(temp)
     close_data.append(float(temp))
     if len(close_data) == 2:
         break

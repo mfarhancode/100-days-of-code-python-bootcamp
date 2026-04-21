@@ -28,7 +28,7 @@ weather_data = response.json()
 # print(data)
 # print(data['list'])
 id_list = [hour_data["weather"][0]["id"] for hour_data in weather_data['list']]
-# print(id_list)
+print(id_list)
 
 will_rain = False
 for i in id_list:
