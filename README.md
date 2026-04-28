@@ -59,7 +59,16 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 34:** [Creating a GUI Quiz App](./day_34_creating_a_gui_quiz_app)
 * **Day 35:** [API Keys Authentication, Twillio: Send SMS](./day_35_send_sms_twillio)
 * **Day 36:** [Stock Trading News Alert Project](./day_36_stock_trading_news_alert_project)
+* **Day 37:** [](./)
+* **Day 38:** [](./)
+* **Day 39:** [](./)
+* **Day 40:** [](./)
+* **Day 41:** [Web Foundation - Introduction to HTML](./day_41_introduction_to_html)
+* **Day 42:** [Web Foundation - Intermediate HTML](./day_42_intermediate_html)
+* **Day 43:** [Web Foundation - Introduction to CSS](./day_43_introduction_to_css)
+* **Day 44:** [Web Foundation - Intermediate CSS](./day_44_intermediate_css)
 * ...
+
 
 ### Intermediate+
 
