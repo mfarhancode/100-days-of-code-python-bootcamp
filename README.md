@@ -60,7 +60,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 35:** [API Keys Authentication, Twillio: Send SMS](./day_35_send_sms_twillio)
 * **Day 36:** [Stock Trading News Alert Project](./day_36_stock_trading_news_alert_project)
 * **Day 37:** [](./)
-* **Day 38:** [](./)
+* **Day 38:** [Workout Tracking Using Google Sheets](./day_38_workout_tracking_using_google_sheets)
 * **Day 39:** [](./)
 * **Day 40:** [](./)
 * **Day 41:** [Web Foundation - Introduction to HTML](./day_41_introduction_to_html)
