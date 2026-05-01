@@ -54,6 +54,9 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 29:** [Building a Password Manager GUI App with Tkinter](./day_29_password_manager_app)
 * **Day 30:** [Errors, Exceptions and JSON Data](./day_30_errors_and_exceptions_handling)
 * **Day 31:** [Flash Card App Capstone Project](./day_31_flash_card_project_start)
+
+### Intermediate+
+
 * **Day 32:** [Send Email (smtplib)](./day_32_send_email_smtplib)
 * **Day 33:** [API Endpoints & API Parameters - ISS Overhead Notifier](./day_33_iss_overhead_notifier)
 * **Day 34:** [Creating a GUI Quiz App](./day_34_creating_a_gui_quiz_app)
@@ -67,12 +70,6 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 43:** [Web Foundation - Introduction to CSS](./day_43_introduction_to_css)
 * **Day 44:** [Web Foundation - Intermediate CSS](./day_44_intermediate_css)
 * **Day 44:** [Web Scraping with Beautiful Soup](./day_45_web_scraping)
-* ...
-
-
-### Intermediate+
-
-* **Day 32:** ---
 * ...
 
 ### Advanced
