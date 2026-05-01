@@ -14,7 +14,6 @@ flight_search = FlightSearch()
 customer_data = data_manager.get_customer_emails()
 customer_email_list = [row['whatIsYourEmail?'] for row in customer_data]
 
-# print(customer_email_list)
 ORIGIN_CITY_IATA = "LON"
 
 for row in sheet_data:
