@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MY_LAT = os.getenv("MY_LAT") # Your latitude
-MY_LONG = os.getenv("MY_LONG") # Your longitude
+MY_LAT = float(os.getenv("MY_LAT")) # Your latitude
+MY_LONG = float(os.getenv("MY_LONG")) # Your longitude
 
 MY_EMAIL = os.getenv("MY_EMAIL")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")

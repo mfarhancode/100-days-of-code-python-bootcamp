@@ -50,10 +50,14 @@ import datetime as dt
 import random
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
-MY_EMAIL = "bapakfarhan1212@gmail.com"
-MY_PASSWORD = "rouqaxnkvdvepeaz"
-RECIPIENT_EMAIL = "fani8731507@gmail.com"
+env_file_path = Path(__file__).parent.parent.joinpath('.env')
+load_dotenv(dotenv_path=env_file_path)
+
+MY_EMAIL = os.getenv("MY_EMAIL")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL")
 
 # for password:
 # go to this url

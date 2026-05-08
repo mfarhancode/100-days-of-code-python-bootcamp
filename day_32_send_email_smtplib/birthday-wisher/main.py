@@ -3,11 +3,15 @@ import datetime as dt
 from random import choice
 import smtplib
 from pathlib import Path
-import sys
+import os
+from dotenv import load_dotenv
 
-MY_EMAIL = 'bapakfarhan1212@gmail.com'
-PASSWORD = 'rouqaxnkvdvepeaz'
+env_file_path = Path(__file__).parent.parent.joinpath('.env')
+load_dotenv(dotenv_path=env_file_path)
 
+MY_EMAIL = os.getenv("MY_EMAIL")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL")
 
 # for password:
 # go to this url
@@ -31,7 +35,7 @@ def send_birthday_email(name, recipient_email):
     try:
         with smtplib.SMTP('smtp.gmail.com', port=587) as conn:
             conn.starttls()
-            conn.login(user=MY_EMAIL, password=PASSWORD)
+            conn.login(user=MY_EMAIL, password=EMAIL_PASSWORD)
             conn.sendmail(
                     from_addr=MY_EMAIL,
                     to_addrs=recipient_email,
