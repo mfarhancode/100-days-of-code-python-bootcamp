@@ -69,7 +69,6 @@ RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL")
 # print(now.weekday())
 
 def daily_quote():
-    global MY_EMAIL, MY_PASSWORD
     file_path = Path(__file__).parent.joinpath('quotes.txt')
     with open(file_path, 'r') as quotes:
         quotes_list = quotes.read().splitlines()
@@ -79,7 +78,7 @@ def daily_quote():
 
     with smtplib.SMTP('smtp.gmail.com', port=587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
+        connection.login(user=MY_EMAIL, password=EMAIL_PASSWORD)
         connection.sendmail(from_addr = MY_EMAIL,
                             to_addrs = RECIPIENT_EMAIL,
                             msg=f"Subject:{subject}\n\n{quote}")
