@@ -71,7 +71,9 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 44:** [Web Foundation - Intermediate CSS](./day_44_intermediate_css)
 * **Day 45:** [Web Scraping with Beautiful Soup](./day_45_web_scraping)
 * **Day 47:** [Create an Automated Amazon Price Tracker](./day_47_automated_amazon_price_tracker)
+* **Day 48:** [Selenium Webdriver Browser and Game Playing Bot](./day_47_automated_amazon_price_tracker)
 * ...
+
 
 ### Advanced
 
