@@ -7,8 +7,8 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 import time
 import sys
 
-ACCOUNT_EMAIL = "rajaji@test.com" 
-ACCOUNT_PASSWORD = "raja@1234"    
+ACCOUNT_EMAIL = "name@test.com" 
+ACCOUNT_PASSWORD = "password"    
 GYM_URL = "https://appbrewery.github.io/gym/"
 BOOKING_TIME = '6:00 PM'
 
