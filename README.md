@@ -74,6 +74,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 48:** [Selenium Webdriver Browser and Game Playing Bot](./day_48_selenium_game_playing_bot)
 * **Day 49:** [Automating your Exercise Routine at the Gym](./day_49_gym_booking_bot)
 * **Day 51:** [Internet Speed X Complaint Bot](./day_51_internet_speed_and_complaint_bot)
+* **Day 52:** [Instagram Follower Bot](./day_52_instagram_follower_bot)
 * ...
 
 
