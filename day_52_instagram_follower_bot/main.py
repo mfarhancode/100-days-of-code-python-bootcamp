@@ -61,8 +61,6 @@ class InstaFollower:
                 cancel_button = self.driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Cancel')]")
                 self.driver.execute_script("arguments[0].click();", cancel_button)
             
-
-
     
 ig_bot = InstaFollower()
 ig_bot.login()

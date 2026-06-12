@@ -74,6 +74,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 49:** [Automating your Exercise Routine at the Gym](./day_49_gym_booking_bot)
 * **Day 51:** [Internet Speed X Complaint Bot](./day_51_internet_speed_and_complaint_bot)
 * **Day 52:** [Instagram Follower Bot](./day_52_instagram_follower_bot)
+* **Day 53:** [Web Scraping Capstone - Data Entry Job Automation](./day_53_data_entry_job_automation)
+
 * ...
 
 
