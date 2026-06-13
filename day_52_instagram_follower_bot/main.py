@@ -43,9 +43,10 @@ class InstaFollower:
         followers_link = self.driver.find_element(By.XPATH, "//*[contains(text(), 'followers')]")
         followers_link.click()
         time.sleep(2)
-        scroll = self.driver.find_element(By.XPATH, "/html/body/div[4]/div[2]/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]")
-        
+        scroll = self.driver.find_element(By.XPATH, "/html/body/div[5]/div[2]/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]")
+    
         for i in range(50):
+            # print(i)
             self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", scroll)
             time.sleep(3)
 
@@ -60,6 +61,16 @@ class InstaFollower:
             except ElementClickInterceptedException:
                 cancel_button = self.driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Cancel')]")
                 self.driver.execute_script("arguments[0].click();", cancel_button)
+            
+            # list_follow_btns = driver.find_elements(By.CSS_SELECTOR, "._aswp._aswr._aswu._asw_._asx2")
+            # for btn in list_follow_btns:
+            #     try:
+            #         driver.execute_script("arguments[0].click();", btn)
+            #         time.sleep(3)
+            #     # Clicking button for someone who is already being followed will trigger dialog to Unfollow/Cancel
+            #     except ElementClickInterceptedException:
+            #         cancel_button = driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Cancel')]")
+            #         driver.execute_script("arguments[0].click();", cancel_button)
             
     
 ig_bot = InstaFollower()
