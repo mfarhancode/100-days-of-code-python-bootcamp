@@ -29,10 +29,15 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36", 
   }
 
-response = requests.get(url=LIVE_URL, headers=headers)
+print("==================================================")
+print("       INITIALIZING AUTOMATED PRICE TRACKER       ")
+print("==================================================")
+print("[+] Connecting to target URL and sending request...")
 
+response = requests.get(url=LIVE_URL, headers=headers)
 html = response.text
 
+print("[+] Request successful. Parsing HTML structure...")
 soup = BeautifulSoup(html, 'html.parser')
 
 title_broken = soup.find(id='productTitle').text.split()
@@ -43,7 +48,15 @@ price = float(price.text.replace('IDR', '').replace(',',''))
 
 BUY_PRICE = 1500000
 
+print("\n------------------ DATA EXTRACTED ------------------")
+print(f"[✓] Product Name : {title[:55]}...")
+print(f"[✓] Current Price: IDR {price:,.2f}")
+print(f"[✓] Target Price : IDR {BUY_PRICE:,.2f}")
+print("----------------------------------------------------\n")
+
 if price < BUY_PRICE:
+    print("[!] Target reached! Current price is lower than target price.")
+    print("[+] Connecting to secure Gmail SMTP server...")
     subject = "Amazon Price Alert!!!"
     message = f"{title}\nPrice: IDR {price}\n{LIVE_URL}"
     with smtplib.SMTP('smtp.gmail.com', port=587) as connection:
@@ -53,4 +66,10 @@ if price < BUY_PRICE:
                             to_addrs = RECIPIENT_EMAIL,
                             msg=f"Subject:{subject}\n\n{message}".encode('utf-8')
                             )
-        print('--EMAIL SENT--')
+        print('[✓] STATUS: ALERT EMAIL SENT SUCCESSFULLY!')
+else:
+    print("[i] Status: Current price is still above target price. No alert sent.")
+
+print("==================================================")
+print("                PROCESS COMPLETED                 ")
+print("==================================================")
