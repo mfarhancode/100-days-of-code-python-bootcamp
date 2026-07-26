@@ -76,7 +76,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 52:** [Instagram Follower Bot](./day_52_instagram_follower_bot)
 * **Day 53:** [Web Scraping Capstone - Data Entry Job Automation](./day_53_data_entry_job_automation)
 * **Day 54:** [Introduction to Web Development with Flask](./day_54_intro_flask)
-
+* **Day 55:** [HTML & URL Parsing in Flask and the Higher Lower Game](./day_55_html_and_url_parsing_in_flask)
 * ...
 
 

@@ -56,6 +56,7 @@ def say_greeting():
 # say_hello()
 
 # ----------------------- speed_calc_decorator ------------------------
+import time
 
 current_time = time.time()
 print(current_time) # seconds since Jan 1st, 1970 
@@ -63,13 +64,12 @@ print(current_time) # seconds since Jan 1st, 1970
 def speed_calc_decorator(function):
     def wrapper_function():
         start_time = time.time()
-        # print(start_time)
+
         function()
         end_time = time.time()
-        # print(end_time)
         run_speed = end_time - start_time
-        print(f'{function.__name__} run speed:')
-        print(run_speed)
+        print(f'{function.__name__} run speed: {run_speed}')
+
     return wrapper_function
         
 @speed_calc_decorator
@@ -85,3 +85,5 @@ def slow_function():
 fast_function()
 
 slow_function()
+
+
