@@ -79,12 +79,11 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 55:** [HTML & URL Parsing in Flask and the Higher Lower Game](./day_55_html_and_url_parsing_in_flask)
 * **Day 56:** [Rendering HTML/Static files and Using Website Templates](./day_56_rendering_html_and_static_files)
 * **Day 57:** [Templating with Jinja in Flask Applications](./day_57_templating_with_jinja)
-* **Day 58:** [Web Foundation Bootstrap](./day_58_web_foundation_bootstra)
+* **Day 58:** [Web Foundation Bootstrap](./day_58_web_foundation_bootstrap)
 
 ### Advanced
 
-* **Day 59:** ---
-* ...
+* **Day 59:** [Blog Capstone Project Part 2 - Adding Styling](./day_59_blog_capstone_project_part_2_adding_styling)
 
 ### Professional
 
