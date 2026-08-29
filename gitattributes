@@ -1,0 +1,3 @@
+# Ignore all CSS and SCSS files from repository language statistics
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
