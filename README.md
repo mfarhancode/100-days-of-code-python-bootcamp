@@ -85,6 +85,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 
 * **Day 59:** [Blog Capstone Project Part 2 - Adding Styling](./day_59_blog_capstone_project_part_2_adding_styling)
 * **Day 60:** [Make POST Requests with Flask and HTML Forms](./day_60_make_post_requests_with_flask_and_html_forms)
+* **Day 61:** [Building Advanced Forms with Flask-WTForms](./day_61_flask_secrets)
+* **Day 62:** [Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project](./day_62_coffee_and_wifi)
 
 ### Professional
 
