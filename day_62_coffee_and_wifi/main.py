@@ -1,9 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, DateTimeField, SelectField, URLField
 from wtforms.validators import DataRequired
 import csv
+from pathlib import Path
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
@@ -12,16 +13,13 @@ Bootstrap5(app)
 
 class CafeForm(FlaskForm):
     cafe = StringField('Cafe name', validators=[DataRequired()])
-    submit = SubmitField('Submit')
-
-# Exercise:
-# add: Location URL, open time, closing time, coffee rating, wifi rating, power outlet rating fields
-# make coffee/wifi/power a select element with choice of 0 to 5.
-#e.g. You could use emojis ☕️/💪/✘/🔌
-# make all fields required except submit
-# use a validator to check that the URL field has a URL entered.
-# ---------------------------------------------------------------------------
-
+    location = URLField('Cafe Location on Google Maps (URL)', validators=[DataRequired()])
+    open = StringField('Opening Time e.g. 8AM', validators=[DataRequired()])
+    close = StringField('Closing Time e.g. 5:30PM', validators=[DataRequired()])
+    coffee = SelectField('Coffee Rating', choices=['✘', '☕', '☕☕', '☕☕☕','☕☕☕☕', '☕☕☕☕☕'])
+    wifi = SelectField('Wifi Rating', choices=['✘', '💪', '💪💪', '💪💪💪','💪💪💪💪', '💪💪💪💪'])
+    power = SelectField('Power Rating', choices=['✘', '🔌', '🔌🔌', '🔌🔌🔌','🔌🔌🔌🔌', '🔌🔌🔌🔌🔌'])
+    submit = SubmitField('Submit') 
 
 # all Flask routes below
 @app.route("/")
@@ -29,11 +27,18 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/add')
+@app.route('/add', methods=['GET', 'POST'])
 def add_cafe():
     form = CafeForm()
     if form.validate_on_submit():
-        print("True")
+        all_values = form.data.values()
+        values = list(all_values)[:-2]
+        file_path = Path(__file__).parent.joinpath('cafe-data.csv')
+        with open(file_path, 'a', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(values)
+        return redirect('/cafes')
+
     # Exercise:
     # Make the form write a new row into cafe-data.csv
     # with   if form.validate_on_submit()
@@ -42,7 +47,8 @@ def add_cafe():
 
 @app.route('/cafes')
 def cafes():
-    with open('cafe-data.csv', newline='', encoding='utf-8') as csv_file:
+    file_path = Path(__file__).parent.joinpath('cafe-data.csv')
+    with open(file_path, newline='', encoding='utf-8') as csv_file:
         csv_data = csv.reader(csv_file, delimiter=',')
         list_of_rows = []
         for row in csv_data:
