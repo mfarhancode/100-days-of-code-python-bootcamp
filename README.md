@@ -87,6 +87,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 60:** [Make POST Requests with Flask and HTML Forms](./day_60_make_post_requests_with_flask_and_html_forms)
 * **Day 61:** [Building Advanced Forms with Flask-WTForms](./day_61_flask_secrets)
 * **Day 62:** [Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project](./day_62_coffee_and_wifi)
+* **Day 63:** [Databases with SQLite and SQLAlchemy](./day_63_library_project)
+* **Day 64:** [My Top 10 Movies Website](./day_64_top_movies_project)
 
 ### Professional
 
