@@ -90,6 +90,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 63:** [Databases with SQLite and SQLAlchemy](./day_63_library_project)
 * **Day 64:** [My Top 10 Movies Website](./day_64_top_movies_project)
 * **Day 65:** [Web Design School](./day_65_web_design_school)
+* **Day 66:** [Building Your Own API with RESTful Routing](./day_66_files_cafe_api)
 
 ### Professional
 
