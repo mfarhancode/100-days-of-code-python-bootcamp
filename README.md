@@ -92,7 +92,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 65:** [Web Design School](./day_65_web_design_school)
 * **Day 66:** [Building Your Own API with RESTful Routing](./day_66_files_cafe_api)
 * **Day 67:** [Blog Capstone Project Part 3 - RESTful Routing](./day_67_upgraded_blog_restful_routing)
-
+* **Day 70:** [Git, Github and Version Control](./day_70_git_github)
 ### Professional
 
 * **Day 82:** ----
