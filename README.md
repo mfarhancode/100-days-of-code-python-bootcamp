@@ -93,6 +93,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 66:** [Building Your Own API with RESTful Routing](./day_66_files_cafe_api)
 * **Day 67:** [Blog Capstone Project Part 3 - RESTful Routing](./day_67_upgraded_blog_restful_routing)
 * **Day 70:** [Git, Github and Version Control](./day_70_git_github)
+* **Day 72:** [Data Exploration with Pandas: College Major v.s. Your Salary](./day_72_data_exploration_with_pandas)
+
 ### Professional
 
 * **Day 82:** ----
