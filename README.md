@@ -96,7 +96,7 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 72:** [Data Exploration with Pandas: College Major v.s. Your Salary](./day_72_data_exploration_with_pandas)
 * **Day 73:** [Data Visualisation with Matplotlib: Programming Languages](./day_73_data_visualisation_with_matplotlib)
 * **Day 74:** [Aggregate & Merge Data with Pandas: Analyse the LEGO Dataset](./day_74_aggregate_and_merge_data_with_pandas)
-
+* **Day 75:** [Google Trends Data: Resampling and Visualising Time Series](./day_75_resampling_and_visualising_time_series)
 
 ### Professional
 
