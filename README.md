@@ -98,6 +98,8 @@ This repository contains my daily code and projects from **[100 Days of Code: Th
 * **Day 74:** [Aggregate & Merge Data with Pandas: Analyse the LEGO Dataset](./day_74_aggregate_and_merge_data_with_pandas)
 * **Day 75:** [Google Trends Data: Resampling and Visualising Time Series](./day_75_resampling_and_visualising_time_series)
 * **Day 76:** [Beautiful Plotly Charts & Analysing the Android App Store](./day_76_plotly_charts)
+* **Day 77:** [Computation with NumPy and N-Dimensional Arrays](./day_77_computation_with_numpy)
+
 
 ### Professional
 
